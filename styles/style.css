@@ -93,7 +93,79 @@
     background-color: #FB2E86;
     padding: 3px 5px;
 }
+/* banner section */
+.banner-section{
+    display: flex;
+    padding: 20px;
+    background-color: #F2F0FF;
+    position: relative;
+}
+.dot{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #F701A8;
+    border-radius: 50%;
+    left: 184px;
+    top: 460px;
+}
+.banner-section .banner-right img{
+    max-width: 629px;
+    max-height: 629px;
+}
+.banner-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-left .content{
+    margin-left: 400px;
+    width: 450px;
+    padding: 0 30px;
+}
+.banner-left .bulb img{
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+.content-title{
+    color: #FB2E86;
 
+}
+.big-title{
+    font-size: 40px;
+    margin: 15px 0;
+}
+.para{
+    color: #8A8FB9;
+}
+.banner-btn{
+    background-color: #F701A8;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.slider-btn{
+    position: absolute;
+    display: flex;
+    gap: 13px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider-dot{
+    width: 7px;
+    height: 7px;
+    border: 1px solid #F701A8;
+    padding: 3px;
+    rotate: 45deg;
+    cursor: pointer;
+}
+.slider-dot:nth-child(1){
+    background-color: #F701A8;
+}
 /* products card */
 .featured-products{
     max-width: 70%;
@@ -104,7 +176,7 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 28px;
-    color: black;
+    color: #151875;
 }
 .cards{
     display: grid;
@@ -169,6 +241,11 @@
     padding: 40px 20px;
     background-color: #fff;
 }
+.product-details:hover{
+    background-color: #2F1AC4;
+    color: white;
+}
+
 .product-details .name{
     color: #FB2E86;
     font-size: 18px;
@@ -197,3 +274,173 @@
 }
 
 /* latest section */
+.latest-product{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.latest-product .type{
+    text-align: center;
+}
+.latest-product .type .type-btn{
+    background: transparent;
+    border: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.latest-product .type .type-btn:nth-child(1){
+    color: #F701A8;
+    border-bottom: 1px solid #F701A8;
+}
+.latest-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 37px;
+    margin: 30px 0;
+}
+
+.latest-product-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.latest-product-details .name{
+    color: #151875;
+    border-bottom: 2px solid #EEEFFB;
+}
+.previous-price{
+    color: red;
+}
+
+/* service section */
+.services-section{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.services{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.services .service{
+    box-shadow:rgb(149 157 165 / 15%) 1px 1px 15px 10px;
+}
+.services-section .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 105px 10px;
+}
+.service-name{
+    font-size: 22px;
+    color: #151875;
+    margin: 20px 0;
+}
+.service-detail{
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(26, 11, 91, 0.3);;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #EEEFFB;
+    padding: 100px 50px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-address {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.fllter-logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer-address h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+.nav-ul a {
+    color: #999;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    color: #2f2f2f;
+}
+.search-section button{
+    background-color: #F701A8;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+   
+    .footer-address {
+        flex: 1 0px;
+    }
+
+    .footer-nav {
+        flex: 2 0px;
+    }
+}
